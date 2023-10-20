@@ -1,0 +1,274 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family-Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petemoss&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+        supported by Chrome and Opera */
+}
+
+body {
+    background: #000;
+    min-height: 50vh;
+}
+
+
+/* Section I */
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/complex.jpg);
+    background-size: cover;
+}
+
+
+/* Main Tag Line-1 */
+
+.tag_line {
+    padding-left: 10%;
+    padding-top: 12%;
+    color: #fff;
+    font-weight: none;
+    font-size: larger;
+    font-style: none;
+    font-family: 'Zen Kurenaido', sans-serif;
+    width: 100%;
+}
+
+
+/* Secondary Tag Line */
+
+.tagline_2 {
+    padding-top: 6%;
+    padding-left: 65%;
+    color: #fff;
+    font-weight: 900;
+    font-size: 25px;
+    font-style: normal;
+    font-family: 'Gluten', cursive;
+    width: 100%;
+}
+
+
+/* Serach Now Button */
+
+.search {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    margin-top: 2%;
+    margin-left: 73%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 900;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.search:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.search:active {
+    transform: translateY(-1px);
+}
+
+
+/* Section II */
+
+.section2 {
+    background-size: auto;
+    background-image: linear-gradient(to bottom, #1b1b1b, #202020, #252525, #2b2b2b, #303030, #353535, #393939, #3e3e3e, #434343, #484748, #4d4c4d, #525152);
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Section II Headline */
+
+.text {
+    letter-spacing: 10px;
+    font-size: 74px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    top: 12%;
+    color: #ffbb00;
+}
+
+.text,
+.design {
+    position: absolute;
+}
+
+
+/* Search Bar */
+
+.searchPanel {
+    margin-top: 25%;
+    height: 5em;
+    margin-left: -36%;
+    width: 46.5em;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgb(254 185 22 / 39%);
+    border-radius: 60px;
+}
+
+.searchPanel input {
+    margin-left: 0%;
+    box-sizing: border-box;
+    height: 100%;
+    flex: 1;
+    font-size: 40px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0 25px;
+    color: #fff;
+}
+
+.searchPanel input::placeholder {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.searchPanel ion-icon {
+    width: 14%;
+    font-size: 55px;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+
+/* Check Me Button */
+
+.checkme {
+    margin-left: 2%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    background: transparent;
+    padding: 0.7em 2em;
+    border: 3px solid #000000;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    animation: bouncy 3s infinite linear;
+    width: 200px;
+}
+
+.checkme:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #000000;
+    z-index: -1;
+}
+
+.checkme:hover,
+.checkme:focus {
+    color: white;
+}
+
+.checkme:hover:before,
+.checkme:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.checkme:active {
+    transform: scale(0.9);
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em;
+    }
+    40% {
+        top: 0em;
+    }
+    43% {
+        top: -0.9em;
+    }
+    46% {
+        top: 0em;
+    }
+    48% {
+        top: -0.4em;
+    }
+    50% {
+        top: 0em;
+    }
+    100% {
+        top: 0em;
+    }
+}
+
+
+/* Section VI */
+
+
+/*
+.tagline_4 {
+    color: #000;
+    margin-top: 10px;
+    margin-left: 460px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Zen Kurenaido', sans-serif;
+    width: 100%;
+}*/
